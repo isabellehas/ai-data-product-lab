@@ -8,7 +8,7 @@ The lab builds on questions explored in [why-agent](https://github.com/Isa-Mapo-
 
 1. Read [Lesson 1: How a language model produces an answer](lessons/01-model-behavior/README.md). It includes the original lesson, follow-up Q&A, and the context pipeline walkthrough.
 2. Try [Experiment 01: What happens when a data agent loses the denominator?](experiments/01-denominator/README.md). You can copy the prompts by hand or print them with Python 3.10+; no packages or API keys are needed for the script.
-3. Score the outputs using the supplied rubric. Record the model and conditions, summarize the failures, and write down what you would change in the product.
+3. Read the [Experiment 01 results](experiments/01-denominator/results.md) for the ten trial scores, responses, and product decision. Use the supplied rubric to score your own runs.
 
 ## Ten-week roadmap
 
@@ -20,7 +20,7 @@ The lab builds on questions explored in [why-agent](https://github.com/Isa-Mapo-
 | Weeks 7–8 | Evaluation | Build a reusable suite with known answers, ambiguous requests, insufficient data, and tool failures | Repeatable test set and error breakdown: what should block a release? |
 | Weeks 9–10 | Operations and release judgment | Trace slow or costly runs, compare versions, and define pilot, monitoring, and rollback criteria | Launch recommendation with known limitations: what should ship, for which users, and under what conditions? |
 
-**Status:** Lesson 1 is written and the first experiment has prompts and a rubric. Model trials are pending. The deeper statistics material and later modules are planned.
+**Status:** Lesson 1 and Experiment 01 are complete. The deeper statistics material and later modules are planned.
 
 ## Repo structure
 
@@ -28,8 +28,12 @@ The lab builds on questions explored in [why-agent](https://github.com/Isa-Mapo-
 | --- | --- | --- |
 | `README.md` | Project overview, roadmap, and entry points | Available |
 | `lessons/` | Concept notes, worked examples, and consolidated Q&A | Lesson 1 available |
-| `experiments/` | One folder per experiment: protocol, inputs or scripts, scoring rubric, and results when collected | Experiment 01 ready to run |
+| `experiments/` | One folder per experiment: protocol, inputs or scripts, scoring rubric, and results when collected | Experiment 01 results available |
 | `evals/` | Shared cases, graders, and instructions once multiple experiments can reuse them | Planned for weeks 7–8 |
 | `decisions/` | Short write-ups for decisions spanning several experiments, such as a launch recommendation | Planned for weeks 9–10 |
 
 Keep an experiment’s evidence and recommendation in its own folder until there is a reason to share it across modules. Give each write-up a question, baseline, setup, results, limitations, and product decision. Distinguish proposed requirements from measured findings. Record the model and conditions so readers can repeat the run. Keep credentials and nonpublic employer material outside the repo.
+
+## License
+
+This project uses the [MIT License](LICENSE).
